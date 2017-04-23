@@ -1,0 +1,6 @@
+echo 
+echo compilation du programme ${a=${1}.c}
+
+killall display gv
+gcc -c FonctionDemo10.c
+gcc -g -o $1 $a FonctionDemo10.o -lm && ./$1
